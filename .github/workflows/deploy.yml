@@ -11,13 +11,16 @@ jobs:
 
     env:
       PROJECT_ID: prod-examen-24-05-2024
-      DOCKER_IMAGE_NAME: prod-examen-24-05-2024/CloudDemo
+      DOCKER_IMAGE_NAME: clouddemo
       TARGET_FRAMEWORK: net6.0
       BUILD_CONFIGURATION: Release
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
+
+      - name: List files in repository
+        run: ls -R
 
       - name: Set up .NET
         uses: actions/setup-dotnet@v2
