@@ -4,8 +4,8 @@ A leaderboard sample that uses the Spanner commit timestamp feature and demonstr
 how to call the [Google Cloud Spanner API](https://cloud.google.com/spanner/docs/)
 from C#.
 
-This sample requires [.NET Core 2.0](
-    https://www.microsoft.com/net/core) or later.  That means using
+This sample requires [.NET Core 3.1](
+   https://dotnet.microsoft.com/en-us/download/dotnet/3.1) or later.  That means using
 [Visual Studio](
     https://www.visualstudio.com/), or the command line.
 
@@ -50,10 +50,10 @@ If you only want to run the complete sample refer to the application in the Lead
     ```
 
     ```
-    PS > dotnet run createSampleDatabase your-project-id my-instance my-database
+    PS > dotnet run create your-project-id your-instance your-database
     Waiting for operation to complete...
     Operation status: RanToCompletion
-    Created sample database my-database on instance my-instance
+    Created sample database your-database on instance your-instance
     ```
 
 ## Contributing changes
